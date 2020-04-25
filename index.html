@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi!</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <div class="container">
+        <div class="businesscard-box flex-container slide-in-left" id="b-box">
+            <div class="flex-item">
+                <img src="./assets/profile.jpg" alt="My profile!" class="image">
+            </div>
+            <div style="padding: 10px;" class="flex-item">
+                <span class="title"><strong>Deepbleu Carpeso</strong></span>
+                <p style="margin: 0;">Web Developer</p>
+            </div>
+            <div class="flex flex-full centerflex">
+                <strong>
+                    <a href="https://php.net" target="_blank"><img src="./assets/php.png" width="25px" height="25px" id="image_url"></a>
+                    <a href="https://vuejs.org" target="_blank"><img src="./assets/Vue.png" width="25px" height="25px"></a>
+                    <a href="https://svelte.dev" target="_blank"><img src="./assets/Svelte.png" width="25px" height="25px"></a>
+                    <a href="https://electronjs.org" target="_blank"><img src="./assets/electronjs.png" width="25px" height="25px"></a>
+                    <a href="https://github.com/ThatDeveloperNamedCarpeso" target="_blank"><img src="./assets/github-logo.png" width="25px" height="25px" id="image_url_github"></a>
+                </strong>
+            </div>
+            <div class="flex-item flex-full centerflex" style="padding: 5px">
+                <div class='toggle' id='switch'>
+                    <div class='glow-comp'></div>
+                    <div class='toggle-button'></div>
+                </div>
+                <!-- <button class="button" style="margin-right: 5px;" id="openVue">Psst. Here.</button> -->
+            </div>
+        </div>
+    </div>
+    <script src="./script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11" defer></script> -->
+</body>
+</html>
