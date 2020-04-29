@@ -1,35 +1,7 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const app = new Vue({
-        el: "#app",
-        data: {
-            isActive: false
-        },
-        mounted: function() {
-        },
-        methods: {
-            closeApp: function() {
-                this.isActive = false;
-            }
-        }
-    });
-
-    Vue.component('option', {
-        template: ``,
-        props: ['name'],
-        data: function() {
-            return {
-
-            }
-        },
-        methods: {
-
-        }
-    });
-});
-
 const btn = document.getElementById('switch');
 const body = document.getElementsByTagName('body');
 const image = document.getElementById('image_url');
+const secretbtn = document.getElementById('secretButton');
 const image_github = document.getElementById('image_url_github');
 const businesscard = document.getElementById('b-box');
 
@@ -48,4 +20,6 @@ btn.addEventListener('click', (event) => {
         image_github.src = "./assets/github-logo.png"
     }
     src = !src;
+
+    secretbtn.classList.toggle('display-secret');
 });
