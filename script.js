@@ -20,6 +20,4 @@ btn.addEventListener('click', (event) => {
         image_github.src = "./assets/github-logo.png"
     }
     src = !src;
-
-    secretbtn.classList.toggle('display-secret');
 });
