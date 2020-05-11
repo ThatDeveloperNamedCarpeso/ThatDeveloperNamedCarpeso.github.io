@@ -1,0 +1,14 @@
+{
+    "blog": [
+        {
+            "post_id": 1,
+            "title": "A new world.",
+            "subtitle": "Content from fetch? WOW!",
+            "date": "5/11/2020",
+            "content": "My name is contentman. And i'm from the future!"
+        }
+    ],
+    "poems": [
+        
+    ]
+}
