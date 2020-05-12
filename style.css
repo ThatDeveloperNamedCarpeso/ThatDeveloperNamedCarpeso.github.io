@@ -13,9 +13,10 @@ body, html {
 }
 
 .menu {
+    padding: 15px 0 15px 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: rgb(235, 235, 235);
 }
@@ -89,4 +90,38 @@ body, html {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.project-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.code-box {
+    border-radius: 6px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.363);
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+.code-title {
+    font-size: 2rem;
+}
+.code-description {
+    color: rgb(196, 196, 196);
+    font-size: 0.9rem;
+    margin: 0 0 15px 0;
+}
+.code-link {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    padding: 7px 0 7px 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 6px;
 }

@@ -7,8 +7,35 @@ window.addEventListener('load', (event) => {
             createPost(element.title, element.subtitle, element.content, element.date, 'Blog', true, element.post_id);
         });
         initialize_links();
+        requestUserRepos('ThatDeveloperNamedCarpeso');
     });
 });
+
+function createProject(title, content, link) {
+    let codeBox = document.createElement('div');
+    let codeTitle = document.createElement('span'),
+    codeContent = document.createElement('p'),
+    codeLink = document.createElement('a');
+
+    codeTitle.appendChild(document.createTextNode(title));
+    codeContent.appendChild(document.createTextNode(content));
+
+    codeLink.href = link;
+    let body = document.getElementById('Repos');
+    codeLink.appendChild(document.createTextNode('Visit Repo'));
+
+    // Set Class Names for each element
+    codeTitle.className = 'code-title';
+    codeContent.className = 'code-description';
+    codeLink.className = 'code-link';
+
+    codeBox.appendChild(codeTitle);
+    codeBox.appendChild(codeContent);
+    codeBox.appendChild(codeLink);
+
+    codeBox.className = 'code-box';
+    body.appendChild(codeBox);
+}
 
 function createPost(title, subtitle, content, date, element_id, truncate = false, post_id) {
     let container = document.createElement('div');
@@ -72,4 +99,30 @@ function initialize_links() {
             });
         });
     }
+}
+
+// Taken from codesnippet.io
+function requestUserRepos(username){
+    // Create new XMLHttpRequest object
+    const xhr = new XMLHttpRequest();
+    // GitHub endpoint, dynamically passing in specified username
+    const url = `https://api.github.com/users/${username}/repos`;
+    // Open a new connection, using a GET request via URL endpoint
+    // Providing 3 arguments (GET/POST, The URL, Async True/False)
+    xhr.open('GET', url, true);
+    // When request is received
+    // Process it here
+    xhr.onload = function() {
+        // Parse API data into JSON
+        const data = JSON.parse(this.response);
+        // Loop over each object in data array
+        for (let i in data) {
+            createProject(data[i].name, data[i].description, data[i].html_url);
+        }
+
+    }
+    
+    // Send the request to the server
+    xhr.send();
+    
 }
