@@ -3,41 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Me.</title>
+    <title id="title">Home</title>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;600&display=swap" 
+    rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Jost|Martel&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./logo.png">
-    <style>
-        .home-page {
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <div class="menu">
-            <a href="#Home"><img src="./logo.png" alt="" width="50px" height="50px"></a>
-            <span class="item">I do <a href="#Code">Code</a> and <a href="#Blog">Blog</a> about things. </span>
+        <div class="title-container">
+            <span class="subtitle" id="subtitle">Tech and Talks</span>
+            <span class="title" id="title">My Blog</span>
         </div>
-        <div class="app">
-            <div class="page home-page" id="Home">
-                <span style="font-size: 2.5rem;">Carpeso, Me.</span>
-            </div>
-            <div class="page" id="Code">
-                <div class="project-container" id="Repos">
-                </div>
-            </div>
-            <div class="page" id="Blog">
-
-            </div>
-            <div class="page" id="Post">
-
+        <div class="navigation-bar">
+            <a href="index.html" class="navigation-item">Home</a>
+            <a href="about.html" class="navigation-item">About</a>
+            <a href="contact.html" class="navigation-item">Contact</a>
+        </div>
+        <div class="post-container" id="posts">
+            <div class="lds-facebook">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
     </div>
-    <script src="./scripts.js"></script>
+    <div class="footer">
+        <a>Blog Home</a>
+        <div class="footer-links">
+            <a href="index.html" class="navigation-item">Home</a>
+            <a href="about.html" class="navigation-item">About</a>
+            <a href="contact.html" class="navigation-item">Contact</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
