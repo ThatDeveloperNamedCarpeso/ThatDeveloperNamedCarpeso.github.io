@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="hero-banner" class="hero-banner"></div>
-    <div id="content" class="content"></div>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        fetch('./articles/abinadi.md').then(res => res.text())
-        .then(data => {
-            document.getElementById('content').innerHTML = marked(data);
-        });
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="hero_banner" class="hero-banner"></div>
+        <div id="content" class="content"></div>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">
+        </script>
+        <script>
+            var url_string = window.location.href; //window.location.href
+            var url = new URL(url_string);
+            var c = url.searchParams.get("article");
+
+            fetch('./articles/' + c + '.md').then(res => res.text())
+            .then(data => {
+                document.getElementById('content').innerHTML = marked(data);
+                document.getElementById('hero_banner')
+                .style
+                .backgroundImage = 'url(articles/' + c +'.png)';
+            });
+        </script>
+    </body>
 </html>

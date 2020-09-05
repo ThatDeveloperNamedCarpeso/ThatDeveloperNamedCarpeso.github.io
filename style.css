@@ -4,7 +4,11 @@ body, html {
     height: 100%;
     font-family: 'PT Serif', serif;
 }
-
+.hero-banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 @media screen and (max-width: 600px) {
     .content {
         padding: 10px;
@@ -13,12 +17,15 @@ body, html {
     .hero-banner {
         height: 250px;
         width: 100%;
-        background-color: black;
     }
 }
 @media screen and (min-width: 600px) {
     .content {
         padding: 10px;
         margin: 0px 25%;
+    }
+    .hero-banner {
+        height: 250px;
+        width: 100%;
     }
 }
