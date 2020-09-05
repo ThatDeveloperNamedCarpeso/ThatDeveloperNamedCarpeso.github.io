@@ -1,0 +1,24 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'PT Serif', serif;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        padding: 10px;
+        margin: 0px 20px;
+    }
+    .hero-banner {
+        height: 250px;
+        width: 100%;
+        background-color: black;
+    }
+}
+@media screen and (min-width: 600px) {
+    .content {
+        padding: 10px;
+        margin: 0px 25%;
+    }
+}

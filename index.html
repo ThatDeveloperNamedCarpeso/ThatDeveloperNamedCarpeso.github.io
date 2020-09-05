@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="hero-banner" class="hero-banner"></div>
+    <div id="content" class="content"></div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        
+        fetch('./articles/abinadi.md').then(res => res.text())
+        .then(data => {
+            document.getElementById('content').innerHTML = marked(data);
+        });
     </script>
 </body>
 </html>
