@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.navigation {
+    box-sizing: border-box;
+    background-color: rgb(148, 223, 223);
+    height: 70px;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.navigation > a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+.hero-banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+.footer > a {
+    margin-top: 10px;
+    text-decoration: underline;
+    color: rgb(73, 73, 73);
+}
+p {
+    margin: 25px 0;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+h1 {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    margin: 50px 0;
+}
+h3 {
+    font-size: 1.4rem;
+}
+@media screen and (max-width: 600px) {
+    .content {
+        padding: 10px;
+        margin: 0px 20px;
+    }
+    .hero-banner {
+        height: 300px;
+        width: 100%;
+    }
+    .footer {
+        margin-top: 80px;
+        height: 200px;
+        width: 100%;
+        border-top: 1px solid #e4e4e4;
+        background-color: #f1f1f1;
+    }
+}
+@media screen and (min-width: 600px) {
+    .content {
+        padding: 10px;
+        margin: 0px 20%;
+    }
+    .hero-banner {
+        height: 400px;
+        width: 100%;
+    }
+    .footer {
+        margin-top: 80px;
+        height: 200px;
+        width: 100%;
+        border-top: 1px solid #e4e4e4;
+        background-color: #f1f1f1;
+    }
+}
