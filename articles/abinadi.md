@@ -48,4 +48,4 @@ She shared one last testimony to those who are in need of faith:
 
 As we struggle to gain faith in these perilous times, we must always remember that, like Abinadi, God will guide us and protect us if we have faith in him. Trust his plan, and all is well. 
 
-I testify of his marvelous works, and that we are all his children whom he loves very much. I testify that, though these times may be full of darkness and 
+I testify of his marvelous works, and that we are all his children whom he loves very much. I testify that, though these times may be full of darkness and trials, we can get through it all through our faith in Jesus Christ, standing our ground and never wavering against any challenge that may come. And this, I testify, in the name of Jesus Christ.
