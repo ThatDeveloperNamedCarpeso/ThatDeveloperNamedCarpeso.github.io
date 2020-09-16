@@ -4,7 +4,12 @@ body, html {
     height: 100%;
     font-family: 'Nunito', sans-serif;
 }
+.dark-mode {
+    filter: invert(1);
+    background-color: rgb(37, 37, 37);
+}
 body {
+    transition: all 0.5s ease;
     box-sizing: border-box;
     display: flex;
     flex-flow: column nowrap;
@@ -12,6 +17,7 @@ body {
     align-items: center;
 }
 .container {
+    margin-top: auto;
     top: 0;
     left: 0;
     box-sizing: border-box;
@@ -21,6 +27,12 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+}
+.name {
+    font-size: 2rem;
+    font-family: inherit;
+    color: black;
+    margin-top: 20px;
 }
 .container > a {
     background-size: cover;
@@ -58,10 +70,11 @@ body {
 .title > div > a {
     margin: 5px 10px;
     box-sizing: border-box;
-    border: 2px solid black;
-    background: transparent;
+    border: 2px solid white;
+    background: white;
+    filter: invert(1);
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1rem;
     font-family: inherit;
     display: flex;
@@ -82,4 +95,14 @@ button:focus {
 }
 #text {
     color: rgb(255, 174, 0);
+}
+.toggler {
+    margin: auto 0 30px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.toggler > span {
+    margin-bottom: 10px;
 }
