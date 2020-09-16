@@ -1,0 +1,85 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.container > a {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px;
+    width: 40px;
+}
+.container > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 2.2rem;
+}
+.left {
+    background-image: url(asset/bracket_left.png);
+}
+.right {
+    background-image: url(asset/bracket_right.png);
+}
+.title {
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    width: 300px;
+    text-align: center;
+}
+.title > div {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.title > div > a {
+    margin: 5px 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.title > div > a > img {
+    box-sizing: border-box;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+}
+button:focus {
+    outline: none;
+}
+#text {
+    color: rgb(255, 174, 0);
+}
