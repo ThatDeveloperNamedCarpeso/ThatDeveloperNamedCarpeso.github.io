@@ -4,105 +4,11 @@ body, html {
     height: 100%;
     font-family: 'Nunito', sans-serif;
 }
-.dark-mode {
-    filter: invert(1);
-    background-color: rgb(37, 37, 37);
-}
-body {
-    transition: all 0.5s ease;
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
 .container {
-    margin-top: auto;
-    top: 0;
-    left: 0;
     box-sizing: border-box;
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
+    height: 100%;
+    padding: 40px;
 }
-.name {
-    font-size: 2rem;
-    font-family: inherit;
-    color: black;
-    margin-top: 20px;
-}
-.container > a {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 80px;
-    width: 40px;
-}
-.container > span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    font-size: 2.2rem;
-}
-.left {
-    background-image: url(asset/bracket_left.png);
-}
-.right {
-    background-image: url(asset/bracket_right.png);
-}
-.title {
-    font-size: 1.5rem;
-    box-sizing: border-box;
-    width: 300px;
-    text-align: center;
-}
-.title > div {
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-.title > div > a {
-    margin: 5px 10px;
-    box-sizing: border-box;
-    border: 2px solid white;
-    background: white;
-    filter: invert(1);
-    padding: 5px 10px;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-family: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-.title > div > a > img {
-    box-sizing: border-box;
-    height: 18px;
-    width: 18px;
-    margin-right: 10px;
-}
-button:focus {
-    outline: none;
-}
-#text {
-    color: rgb(255, 174, 0);
-}
-.toggler {
-    margin: auto 0 30px 0;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
-.toggler > span {
-    margin-bottom: 10px;
+.navigation {
+    
 }
