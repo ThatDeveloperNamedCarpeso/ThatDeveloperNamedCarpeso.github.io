@@ -3,13 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>RescuePH</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Righteous&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
-    <div class="container">
-        
+    <div class="modal">
+        <div class="modal-body">
+            <div class="modal-header">
+
+            </div>
+            <div class="modal-content">
+
+            </div>
+            <div class="modal-footer">
+                
+            </div>
+        </div>
     </div>
-    <script src="scripts.js"></script>
+    <div class="container">
+        <nav>
+            <a href="#" class="menu link"></a>
+            <span class="title">RESCUE.PH</span>
+            <a href="#" class="about link"></a>
+        </nav>
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+        <main>
+            <span id="loc_text">Loading location...</span>
+            <div class="buttons-container">
+                <button id="action_safe">SAFE</button>
+                <button id="action_rescue">RESCUE</button>
+            </div>
+        </main>
+    </div>
+    <script src="./scripts.js"></script>
 </body>
 </html>
