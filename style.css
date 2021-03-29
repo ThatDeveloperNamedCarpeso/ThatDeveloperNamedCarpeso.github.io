@@ -92,6 +92,11 @@ body, html {
     margin: 5px 0;
     font-size: 1.2rem;
 }
+.descriptions > span {
+    font-weight: lighter;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
 .article-open {
     font-family: inherit;
     border: none;
@@ -115,21 +120,32 @@ body, html {
     width: 100%;
     position: fixed;
     z-index: 200;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     color: white;
+    transition: all 0.5s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-body {
     display: grid;
     grid-template-rows: 1fr 60px;
-    transition: all 0.5s ease;
+    height: 100%;
 }
 .testimony {
     overflow: auto;
     padding: 20px;
+    max-width: 600px;
 }
 .exit {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
+    max-width: 600px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 .exit > button {
     border: none;
